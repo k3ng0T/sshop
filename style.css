@@ -1,0 +1,600 @@
+/* styles.css */
+.backcolor{
+    background: linear-gradient(135deg, #5F2A5F, #9A3B9A, #FF4B4B);
+}
+main{
+    padding-top: 20px;
+    background-color: white;
+}
+body {
+    z-index: 1;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+}
+hr{
+    margin: 0;
+    padding: 0;
+}
+/* Хедер */
+header {
+    position: relative;
+    width: 100%;
+}
+
+/* Верхнее меню */
+/* Скрытое состояние */
+.top-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, #5F2A5F, #9A3B9A, #FF4B4B);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    z-index: 50;
+}
+
+/* Показ */
+.top-menu.visible {
+    transform: translateY(0);
+}
+
+/* Эффект при наведении */
+.top-menu:hover {
+    transform: translateY(0) !important;
+}
+
+
+/* Логотип */
+.Logo img {
+    display: inline-block;
+    width: 150px;
+    height: auto;
+}
+
+/* Фото в хедере */
+.Headr_photo {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    z-index: 1; /* Фото ниже других элементов */
+}
+
+.Headr_photo .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный слой */
+    z-index: 1;
+}
+.Headr_photo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+.cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+.cta h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-family: 'Benzin', sans-serif;
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.cta-button {
+    font-family: 'Benzin';
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #ff0066;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+.cta-button:hover {
+    transition: 0.8s;
+    background: linear-gradient(315deg, #FF7070, #FF4B4B);
+}
+
+#profile-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a {
+    font-size: 14px;
+    font-family: 'Montserrat',sans-serif;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-position: center;
+    color: white;
+    text-decoration: none;
+    background-image:  linear-gradient(to right, #ffff, rgb(255, 0, 255)); /* Параметры градиента */
+    background-repeat: no-repeat; /* Фон не повторяется */
+    background-size: 0px 0px; /* Линия будет шириной 10px и высотой 2px */
+    background-position: left bottom; /* Положение в левом нижнем углу */
+    padding-bottom: 2px; /* Расстояние от текста до линии */
+    text-decoration: none; /* Убираем подчёркивание */
+    transition: 0.5s; 
+}
+.top-menu {
+    gap: 20px;
+    display: flex;
+    justify-content: start; /* Разделение логотипа, ссылок и кнопки */
+    align-items: center;
+    padding: 10px 20px;
+}
+.nav-links {
+    display: flex;
+    flex-direction: column; /* Кнопки в столбик */
+    gap: 10px; /* Расстояние между кнопками */
+}
+
+.auth-button {
+    left: 90%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.auth-button .cta-button {
+    font-size: 14px;
+    font-family: 'Benzin';
+    background-color: #ff0066;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.auth-button .cta-button:hover {
+    background-color: #cc0052;
+}
+
+.Logo img{
+    width: 150px;
+    height: auto;
+}
+
+
+
+
+/* Мейн часть */
+.mainimg{
+    border-radius: 20px;
+    display: flex;
+    position: relative;
+}
+.mainimg img{
+    border-radius: 40px;
+    width: 80%;
+    height: auto;
+}
+
+
+
+
+
+/*НИЖНАЯ ЧАСТЬ*/
+footer {
+    justify-content: space-between;
+    font-family: 'Benzin';
+    background: linear-gradient(135deg, #5F2A5F, #9A3B9A, #FF4B4B);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+
+}
+footer p{
+    color:#ffff;
+}
+.number{
+    text-align: left;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+.adr p{
+    color:#333333;
+}
+.adr p{
+    margin-left: 40px;
+    margin-bottom: 2px;
+}
+.adr ul{
+    margin-top: -3px;
+}
+.adr li{
+    text-decoration: none;
+    color: #333333 ;
+
+}
+.adr a{
+    text-decoration: none;
+    color:#333333;
+}
+.adress{
+    text-align: left;
+    text-decoration: none;
+    position:relative;
+    display: inline-block;
+}
+.socialMedia{
+    text-align: left;
+    text-decoration: none;
+    position:relative;
+    display: inline-block;
+}
+
+/*ШРИФТЫ*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'Benzin';
+    src: local('Benzin Regular'), local('Benzin-Regular'),
+        url('Benzin-Regular.woff2') format('woff2'),
+        url('Benzin-Regular.woff') format('woff'),
+        url('Benzin-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Benzin';
+    src: local('Benzin Bold'), local('Benzin-Bold'),
+        url('Benzin-Bold.woff2') format('woff2'),
+        url('Benzin-Bold.woff') format('woff'),
+        url('Benzin-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+
+.cb2_title{
+    color: #5f2a5f;
+    font-family: 'Montserrat';
+}
+.cb2_text{
+    font-family: 'Roboto';
+}
+.btn2{
+    font-family: 'Benzin';
+}
+
+
+.exs{
+    font-family: 'Montserrat';
+}
+.exs ul,li{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+.correctAns{
+    border-color: greenyellow;
+    border-width: 2px;
+}
+
+
+.container {
+    width: 50px;
+  }
+
+
+  .toggle-header {
+    width: 300px;
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .toggle-content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #ecf0f1;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .toggle-content.open {
+    max-height: 100%; /* Высота содержимого */
+    padding: 15px;
+  }
+
+
+
+
+
+
+
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+  #closemodal span{
+      font-family: 'Benzin';
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+      border: none;
+      background: none;
+  }
+  #closemodal{
+      position: absolute; /* Абсолютное позиционирование относительно ближайшего позиционированного родителя */
+      right: 2%; /* Перемещаем в левую часть контейнера */
+      top: 3%; /* По вертикали по центру */
+      transform: translateY(-50%); /* Для точного центрирования по вертикали */
+      z-index: 1000;
+  }
+  #login-dia{
+    z-index: 998;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.795);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 800px;
+  }
+
+  
+  .login-container {
+    position: fixed;
+
+    top: 8%;
+    left: 25%;
+      background-color: #fff;
+      border-radius: 30px;
+      box-shadow: 0 5px 15px rgba(255, 255, 255, 0.35);
+      overflow: hidden;
+      width: 768px;
+      max-width: 100%;
+      min-height: 600px;
+      height: 800px;
+      transition:all 0,3s ease 0s;
+  }
+  
+  .login-container p {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.3px;
+      margin: 20px 0;
+  }
+  
+  .login-container span {
+      font-size: 12px;
+  }
+  
+  .login-container a {
+      color: #333;
+      font-size: 13px;
+      text-decoration: none;
+      margin: 15px 0 10px;
+  }
+  
+  .login-container button {
+      background-color: #5f2c5f;
+      color: #fff;
+      font-size: 12px;
+      padding: 10px 45px;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-top: 10px;
+      cursor: pointer;
+  }
+  .login-container button:hover{
+      transition: 0.5s;
+      background-color: #FF4B4B;
+  }
+  .login-container button.login-hidden {
+      background-color: transparent;
+      border-color: #fff;
+  }
+  
+  .login-container form {
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 40px;
+      height: 100%;
+  }
+  
+  .login-container input {
+      background-color: #eee;
+      border: none;
+      margin: 8px 0;
+      padding: 10px 15px;
+      font-size: 13px;
+      border-radius: 8px;
+      width: 100%;
+      outline: none;
+  }
+  
+  .login-form-container {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      transition: all 0.6s ease-in-out;
+  }
+  #closemodal{
+      cursor:pointer;
+  }
+  .login-sign-in {
+      left: 0;
+      width: 50%;
+      z-index: 2;
+  }
+  
+  .login-container.active .login-sign-in {
+      transform: translateX(100%);
+  }
+  
+  .login-sign-up {
+      left: 0;
+      width: 50%;
+      opacity: 0;
+      z-index: 1;
+  }
+  
+  .login-container.active .login-sign-up {
+      transform: translateX(100%);
+      opacity: 1;
+      z-index: 5;
+      animation: login-move 0.6s;
+  }
+  @keyframes login-move {
+      0%, 49.99% {
+          opacity: 0;
+          z-index: 1;
+      }
+      50%, 100% {
+          opacity: 1;
+          z-index: 5;
+      }
+  }
+  
+  .login-social-icons {
+      margin: 20px 0;
+  }
+  
+  .login-social-icons a {
+      border: 1px solid #ccc;
+      border-radius: 20%;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 3px;
+      width: 40px;
+      height: 40px;
+  }
+  
+  .login-toggle-container {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+      transition: all 0.6s ease-in-out;
+      border-radius: 20px;
+      z-index: 999;
+  }
+  
+  .login-container.active .login-toggle-container {
+      transform: translateX(-100%);
+      border-radius: 20px;
+  }
+  
+  .login-toggle {
+    background: linear-gradient(135deg, #5F2A5F, #9A3B9A, #FF4B4B);
+      height: 100%;
+      color: #fff;
+      position: relative;
+      left: -100%;
+      height: 100%;
+      width: 200%;
+      transform: translateX(0);
+      transition: all 0.6s ease-in-out;
+  }
+  
+  .login-container.active .login-toggle {
+      transform: translateX(50%);
+  }
+  
+  .login-toggle-panel {
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 0px;
+      text-align: center;
+      top: 0;
+      transform: translateX(0);
+      transition: all 0.6s ease-in-out;
+  }
+  
+  .login-toggle-left {
+      transform: translateX(-200%);
+  }
+  
+  .login-container.active .login-toggle-left {
+      transform: translateX(0);
+  }
+  
+  .login-toggle-right {
+      right: 0;
+      transform: translateX(0);
+  }
+  
+  .login-container.active .login-toggle-right {
+      transform: translateX(200%);
+  }
+  
+  
+  .login-logo-container {
+      margin-bottom: 20px;
+  }
+  
+  .login-logo {
+      max-width: 100px;
+  }
+  
+  .login-cta-button {
+      font-size: 14px;
+      padding: 10px 20px;
+      border-radius: 8px;
+  }
+  .no-scroll{
+    overflow: hidden;
+  }
+  
